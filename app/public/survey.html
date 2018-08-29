@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        * {
+            max-width: 960px;
+            margin: auto;
+        }
+
+        #name, #image {
+            min-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Survey Questions</h1><hr>
+    </header>
+    <form>
+        <h3>About You</h3>
+        <label for="#name">Name (Required)</label><br>
+        <input type="text" id="name" placeholder="Your Name" required><br><br>
+        <label for="image">Link to an image of you (Required)</label><br>
+        <input type="text" id="image" placeholder="Link to your image" required><br><hr>
+
+        <div> <!--Question 1 Div-->
+            <h3>Question 1</h3>
+            <p>You believe unicorns are real.</p>
+            <select id="question1">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 2 Div-->
+            <h3>Question 2</h3>
+            <p>You tend to act quickly before thinking.</p>
+            <select id="question2">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 3 Div-->
+            <h3>Question 3</h3>
+            <p>You prefer to stay home rather than going out.</p>
+            <select id="question3">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 4 Div-->
+            <h3>Question 4</h3>
+            <p>You tend to assume the role of group leader when gathered with others.</p>
+            <select id="question4">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 5 Div-->
+            <h3>Question 5</h3>
+            <p>You like to dance.</p>
+            <select id="question5">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 6 Div-->
+            <h3>Question 6</h3>
+            <p>Your friends would say you have a good sense of humor.</p>
+            <select id="question6">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 7 Div-->
+            <h3>Question 7</h3>
+            <p>Everything is a little better when you add glitter.</p>
+            <select id="question7">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 8 Div-->
+            <h3>Question 8</h3>
+            <p>You prefer warm weather over cool.</p>
+            <select id="question8">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 9 Div-->
+            <h3>Question 9</h3>
+            <p>You try to live a healthy life.</p>
+            <select id="question9">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+        <div> <!--Question 10 Div-->
+            <h3>Question 10</h3>
+            <p>You know how to swim.</p>
+            <select id="question10">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div><br>
+
+
+    </form>
+    <footer style="max-width: 960px; margin: auto">
+        <ul>
+            <li><a href="#">Friends API</a></li>
+            <li><a href="#">Github Repo</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
